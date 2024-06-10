@@ -1,0 +1,24 @@
+nav {
+    height: 117px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >a {
+        height: 69px;
+        margin: 0 100px;
+    }
+    >div {
+        display: flex;
+        gap: 36px;
+        padding: 0 100px;
+        a {
+            text-decoration: unset;
+            font-size: 23px;
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+}
