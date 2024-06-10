@@ -1,24 +1,36 @@
 body {
-    margin: 0;
-    // box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Montserrat';
-    overflow-y: scroll;
-    scrollbar-width: 0px; // Firefox
-    -ms-overflow-style: none; // Explorer, Edge
-    &::-webkit-scrollbar { // Chrome, Safari, Opera
-        display: none;
-    }
+  margin: 0;
+  // box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+  overflow-y: scroll;
+  scrollbar-width: 0px; // Firefox
+  -ms-overflow-style: none; // Explorer, Edge
+  &::-webkit-scrollbar {
+    // Chrome, Safari, Opera
+    display: none;
+  }
+}
+
+button {
+  border-color: #5988FF;
+  color: #5988FF;
+  background-color: white;
+  font-size: 23px;
+  font-family: 'Montserrat';
+  padding: 15px 30px 15px 30px;
+  border-radius: 10px;
+  width: 300px;
 }
 
 h1 {
-    font-size: 61px;
+  font-size: 61px;
 }
 
-h2 { 
-  font-family: 'Baloo 2';
+h2 {
+  font-family: "Baloo 2";
+  color: #5988FF;
 }
-
 
 /* montserrat-regular - latin */
 @font-face {
@@ -31,10 +43,10 @@ h2 {
 /* montserrat-500 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url('./assets/fonts/montserrat-v26-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./assets/fonts/montserrat-v26-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -55,24 +67,24 @@ h2 {
 /* baloo-2-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Baloo 2';
+  font-family: "Baloo 2";
   font-style: normal;
   font-weight: 600;
-  src: url('./assets/fonts/baloo-2-v21-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./assets/fonts/baloo-2-v21-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* baloo-2-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Baloo 2';
+  font-family: "Baloo 2";
   font-style: normal;
   font-weight: 700;
-  src: url('./assets/fonts/baloo-2-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./assets/fonts/baloo-2-v21-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* baloo-2-800 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Baloo 2';
+  font-family: "Baloo 2";
   font-style: normal;
   font-weight: 800;
-  src: url('./assets/fonts/baloo-2-v21-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./assets/fonts/baloo-2-v21-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

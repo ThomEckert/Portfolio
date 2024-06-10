@@ -1,0 +1,40 @@
+section {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    >div {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 210px 0;
+        align-items: center;
+        h2 {
+            margin: 0;
+            font-size: 121px;
+            letter-spacing: -2.5px;
+            line-height: 121px; 
+        }
+        p {
+            font-size: 23px;
+            margin: 0;
+            padding-bottom: 23px;
+        }
+    }
+}
+
+.middle-point-div {
+    max-width: 1440px;
+    height: 206px;
+    .middle-point {
+        position: relative;
+        left: 42%;
+        bottom: 103px;
+    }
+    .point-right {
+        position: relative;
+        left: 61%;
+        bottom: 40px;
+    }
+}
+
