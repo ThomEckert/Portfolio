@@ -1,6 +1,28 @@
 footer {
-    max-width: 1440px;
-    height: 291px;
+  max-width: 1440px;
+  height: 291px;
+  display: flex;
+  background: radial-gradient(circle at 30% -10%, #5988ff, #5988ff, #0043f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: white;
+    font-size: 23px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  > div {
+    width: 90%;
     display: flex;
-    background: radial-gradient(circle at 30% -10%, #5988FF, #5988FF, #0043F0);
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    div {
+        gap: 10px;
+    }
+  }
 }
