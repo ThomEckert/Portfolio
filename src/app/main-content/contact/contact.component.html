@@ -11,15 +11,24 @@
         </div>
 
         <div class="message">
-            <form>
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name...">
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name..." required>
+                @if (!name.valid && name.touched && !name.disabled) {
+                    <span>Please enter your name here</span>
+                }
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Your email...">
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email..." pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                @if (!email.valid && email.touched && !email.disabled) {
+                    <span>Please enter your email here</span>
+                }
 
                 <label for="message">Subject</label>
-                <textarea type="message" id="message" name="message" placeholder="Write something..." style="height: 200px;"></textarea>
+                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" type="message" id="message" name="message" placeholder="Write something..." style="height: 200px;" required></textarea>
+                @if (!message.valid && message.touched && !message.disabled) {
+                    <span>Please enter a message here</span>
+                }
 
                 <input type="submit" value="Submit">
 
