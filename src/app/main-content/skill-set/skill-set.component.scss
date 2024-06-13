@@ -27,6 +27,15 @@ section {
             flex-direction: column;
             align-items: center;
             margin: 0 64px;
+            &:hover {
+                p {
+                    font-weight: 700;
+                }
+                img {
+                    transition: transform 125ms ease-in-out;
+                    transform: translate(0, -10px);
+                }
+            }
         }
     }
 }
