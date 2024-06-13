@@ -25,9 +25,15 @@ footer {
     align-items: center;
     div {
       display: flex;
-        gap: 42px;
+      align-items: center;
+      gap: 42px;
+      height: 50px;
         img {
           margin: 0;
+          &:hover {
+            transition: transform 125ms ease-in-out;
+            transform: scale(1.5);
+          }
         }
     }
   }
