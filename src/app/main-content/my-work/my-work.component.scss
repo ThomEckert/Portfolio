@@ -38,6 +38,10 @@ section {
         align-items: end;
         img {
             width: 85%;
+            &:hover {
+                transition: transform 125ms ease-in-out;
+                transform: scale(1.1) translate(0, -10px);
+            }
         }
     }
     .project-div {
@@ -71,6 +75,15 @@ section {
     text-decoration: none;
     cursor: pointer;
     margin: 50px 50px 0 0;
+    background: linear-gradient(130deg, #5988FF, #5988FF, #0043F0, transparent 50%) right;
+    background-size: 300%;
+    background-position: right;
+    transition: background-position 125ms ease-in-out, color 125ms ease-in-out, transform 125ms ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        background-position: left;
+        color: white;
+    }
 }
 
 .btn-blue {
@@ -83,7 +96,20 @@ section {
     text-decoration: none;
     cursor: pointer;
     margin: 50px 50px 0 0;
+    background: linear-gradient(130deg, #5988FF, #5988FF, #0043F0, #5988FF 50%) right;
+    background-size: 300%;
+    background-position: right;
+    transition: background-position 125ms ease-in-out, color 125ms ease-in-out, transform 125ms ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        background-position: left;
+        color: white;
+    }
 }
+
+
+    
+  
 
 .rowReverse {
     flex-direction: row-reverse;
