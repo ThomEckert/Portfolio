@@ -14,6 +14,9 @@ footer {
     color: white;
     text-decoration: none;
   }
+  img {
+    margin: 0 55px;
+  }
   > div {
     width: 90%;
     display: flex;
@@ -21,7 +24,11 @@ footer {
     text-align: center;
     align-items: center;
     div {
-        gap: 10px;
+      display: flex;
+        gap: 42px;
+        img {
+          margin: 0;
+        }
     }
   }
 }
