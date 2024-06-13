@@ -1,40 +1,75 @@
 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+}
+
+.content-div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  > div {
+    width: 45%;
     display: flex;
-    justify-content: center;
-    max-width: 1440px;
-    >div {
-        width: 45%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 0 210px 0;
-        align-items: center;
-        h2 {
-            margin: 0;
-            font-size: 121px;
-            letter-spacing: -2.5px;
-            line-height: 121px; 
-        }
-        p {
-            font-size: 23px;
-            margin: 0;
-            padding-bottom: 23px;
-        }
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    h2 {
+      margin: 0;
+      font-size: 121px;
+      letter-spacing: -2.5px;
+      line-height: 121px;
     }
+    p {
+      font-size: 23px;
+      margin: 0;
+      padding-bottom: 23px;
+    }
+  }
+}
+
+.btn-div {
+  padding: 0 0 123px 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  >div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+  }
+  a{
+    text-decoration: none;
+    border: 1px solid #5988FF;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 23px;
+    color: #5988FF;
+    cursor: pointer;
+    background: linear-gradient(130deg, #5988FF, #5988FF, #0043F0, transparent 50%) right;
+    background-size: 300%;
+    background-position: right;
+    transition: background-position 125ms ease-in-out, color 125ms ease-in-out, transform 125ms ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        background-position: left;
+        color: white;
+    }
+  }
 }
 
 .middle-point-div {
-    max-width: 1440px;
-    height: 206px;
-    .middle-point {
-        position: relative;
-        left: 42%;
-        bottom: 103px;
-    }
-    .point-right {
-        position: relative;
-        left: 61%;
-        bottom: 40px;
-    }
+  max-width: 1440px;
+  height: 206px;
+  .middle-point {
+    position: relative;
+    left: 42%;
+    bottom: 103px;
+  }
+  .point-right {
+    position: relative;
+    left: 61%;
+    bottom: 40px;
+  }
 }
-
