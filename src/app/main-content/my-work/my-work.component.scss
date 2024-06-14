@@ -132,10 +132,9 @@ section {
     text-align: unset;
     .btn-div {
       flex-direction: unset;
-      // justify-content: space-around;
       a {
         margin: 50px 0 0 0;
-    }
+      }
     }
   }
   .btn-blue,
@@ -143,13 +142,41 @@ section {
     margin: 50px 0 0 0;
   }
 }
+@media (max-width: 1045px) {
+  .my-work {
+    h2 {
+      font-size: 64px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
 @media (max-width: 800px) {
   .projects {
+    padding: 50px 0;
     .img {
       width: 100%;
+      height: 100%;
     }
     .project-div {
-      width: 80%;
+      width: 88%;
+    }
+  }
+  .my-work {
+    >div {
+        width: 80%;
+    }
+  }
+  .btn-blue,
+  .btn-white {
+    margin: 20px 0 0 0;
+  }
+  .rowReverse {
+    .btn-div {
+      a {
+        margin: 20px 0 0 0;
+      }
     }
   }
 }
