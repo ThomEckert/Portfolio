@@ -39,3 +39,28 @@ section {
         }
     }
 }
+
+@media (max-width: 1045px) {
+    section {
+        h2 {
+            font-size: 64px;
+        }
+    }
+}
+@media (max-width: 805px) {
+    section {
+        > div {
+            max-width: none;
+        }
+    }
+}
+@media (max-width: 805px) {
+    section {
+        > div {
+            width: 90%;
+            > div {
+                margin: 0 24px;
+            }
+        }
+    }
+}
