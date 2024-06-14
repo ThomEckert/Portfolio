@@ -1,123 +1,155 @@
 section {
-    max-width: 1440px;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("./../../../assets/img/my-work/ellipse7.png") no-repeat 44% 3%,
+    url("./../../../assets/img/my-work/ellipse8.png") no-repeat 92% 10%,
+    url("./../../../assets/img/my-work/ellipse4.png") no-repeat left 40%,
+    url("./../../../assets/img/my-work/ellipse9.png") no-repeat right 70%,
+    url("./../../../assets/img/my-work/ellipse10.png") no-repeat 10% 72%,
+    url("./../../../assets/img/my-work/ellipse13.png") no-repeat 48% 100%;
+}
+.my-work {
+  width: 90%;
+  h2 {
+    font-size: 96px;
+    margin: 100px 0 0 0;
+  }
+  p {
+    font-size: 23px;
+  }
+  div {
+    width: 50%;
+  }
+}
+.projects {
+  width: 90%;
+  display: flex;
+  padding: 0 0 50px 0;
+  .img {
+    width: 720px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    img {
+      width: 85%;
+      &:hover {
+        transition: transform 125ms ease-in-out;
+        transform: scale(1.1) translate(0, -10px);
+      }
+    }
+  }
+  .project-div {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: 
-    url('./../../../assets/img/my-work/ellipse7.png') no-repeat 44% 3%, 
-    url('./../../../assets/img/my-work/ellipse8.png') no-repeat 92% 10%, 
-    url('./../../../assets/img/my-work/ellipse4.png') no-repeat left 40%,
-    url('./../../../assets/img/my-work/ellipse9.png') no-repeat right 70%, 
-    url('./../../../assets/img/my-work/ellipse10.png') no-repeat 10% 72%, 
-    url('./../../../assets/img/my-work/ellipse13.png') no-repeat 48% 100%;
-}
-
-.my-work {
-    width: 90%;
-    h2 {
-        font-size: 96px;
-        margin: 100px 0 0 0;
+    justify-content: end;
+    h3 {
+      font-size: 45px;
+      color: #5988ff;
+      font-family: "Baloo 2";
+      margin: 0;
     }
-    p {
-        font-size: 23px;
+    h4 {
+      font-size: 23px;
+      color: #5988ff;
+      margin: 0;
     }
     div {
-        width: 50%;
+      display: flex;
     }
+  }
+}
+.btn-white {
+  border: #5988ff solid 2px;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 23px;
+  color: #5988ff;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 50px 50px 0 0;
+  background: linear-gradient(130deg, #5988ff, #5988ff, #0043f0, white 50%)
+    right;
+  background-size: 300%;
+  background-position: right;
+  transition: background-position 125ms ease-in-out, color 125ms ease-in-out,
+    transform 125ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    background-position: left;
+    color: white;
+  }
+}
+.btn-blue {
+  border: #5988ff solid 2px;
+  border-radius: 10px;
+  background: #5988ff;
+  padding: 15px 30px;
+  font-size: 23px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 50px 50px 0 0;
+  background: linear-gradient(130deg, #5988ff, #5988ff, #0043f0, #5988ff 50%)
+    right;
+  background-size: 300%;
+  background-position: right;
+  transition: background-position 125ms ease-in-out, color 125ms ease-in-out,
+    transform 125ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    background-position: left;
+    color: white;
+  }
+}
+.rowReverse {
+  flex-direction: row-reverse;
+  text-align: end;
+  .btn-div {
+    flex-direction: row-reverse;
+    a {
+      margin: 50px 0 0 50px;
+    }
+  }
 }
 
-.projects {
-    width: 90%;
-    display: flex;
-    padding: 0 0 90px 0;
+@media (max-width: 1260px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    .project-div {
+      width: 720px;
+      .btn-div {
+        justify-content: space-around;
+      }
+    }
+  }
+  .rowReverse {
+    flex-direction: column;
+    text-align: unset;
+    .btn-div {
+      flex-direction: unset;
+      // justify-content: space-around;
+      a {
+        margin: 50px 0 0 0;
+    }
+    }
+  }
+  .btn-blue,
+  .btn-white {
+    margin: 50px 0 0 0;
+  }
+}
+@media (max-width: 800px) {
+  .projects {
     .img {
-        width: 720px;
-        height: 460px;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        img {
-            width: 85%;
-            &:hover {
-                transition: transform 125ms ease-in-out;
-                transform: scale(1.1) translate(0, -10px);
-            }
-        }
+      width: 100%;
     }
     .project-div {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        h3 {
-            font-size: 45px;
-            color: #5988FF;
-            font-family: 'Baloo 2';
-            margin: 0;
-        }
-        h4 {
-            font-size: 23px;
-            color: #5988FF;
-            margin: 0;
-        }
-        div {
-            display: flex;
-        }
+      width: 80%;
     }
-}
-
-.btn-white {
-    border: #5988FF solid 2px;
-    border-radius: 10px;
-    padding: 15px 30px;
-    font-size: 23px;
-    color: #5988FF;
-    text-decoration: none;
-    cursor: pointer;
-    margin: 50px 50px 0 0;
-    background: linear-gradient(130deg, #5988FF, #5988FF, #0043F0, transparent 50%) right;
-    background-size: 300%;
-    background-position: right;
-    transition: background-position 125ms ease-in-out, color 125ms ease-in-out, transform 125ms ease-in-out;
-    &:hover {
-        transform: scale(1.1);
-        background-position: left;
-        color: white;
-    }
-}
-
-.btn-blue {
-    border: #5988FF solid 2px;
-    border-radius: 10px;
-    background: #5988FF;
-    padding: 15px 30px;
-    font-size: 23px;
-    color: #FFFFFF;
-    text-decoration: none;
-    cursor: pointer;
-    margin: 50px 50px 0 0;
-    background: linear-gradient(130deg, #5988FF, #5988FF, #0043F0, #5988FF 50%) right;
-    background-size: 300%;
-    background-position: right;
-    transition: background-position 125ms ease-in-out, color 125ms ease-in-out, transform 125ms ease-in-out;
-    &:hover {
-        transform: scale(1.1);
-        background-position: left;
-        color: white;
-    }
-}
-
-
-    
-  
-
-.rowReverse {
-    flex-direction: row-reverse;
-    text-align: end;
-    .btn-div {
-        flex-direction: row-reverse;
-        a {
-            margin: 50px 0 0 50px;
-        }
-    }
+  }
 }
