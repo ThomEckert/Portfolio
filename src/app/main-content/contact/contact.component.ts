@@ -35,10 +35,11 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+            console.log(this.contactData);
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            
             ngForm.resetForm();
           },
           error: (error) => {
@@ -50,5 +51,6 @@ export class ContactComponent {
 
       ngForm.resetForm();
     }
+    this.contactData.checkbox = false;
   }
 }
