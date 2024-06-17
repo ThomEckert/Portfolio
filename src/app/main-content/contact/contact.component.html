@@ -51,7 +51,7 @@
 
                 <div class="checkbox-div">
                     <input id="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox" name="checkbox" type="checkbox" required>
-                    <label for="checkbox">I've read the <a href="#">privacy policy</a> and accept the conditions.</label>
+                    <label for="checkbox">I've read the <a [routerLink]="[ '/privacy-policy' ]">name>privacy policy</a> and accept the conditions.</label>
                     
                 </div>
                 <div class="space-for-message">
