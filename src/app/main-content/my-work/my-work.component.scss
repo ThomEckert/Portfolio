@@ -160,12 +160,24 @@ section {
       height: 100%;
     }
     .project-div {
-      width: 88%;
+      width: 100%;
+      align-items: center;
+      margin-top: 50px;
+      h4 {
+        text-align: center;
+      }
+    }
+    .btn-div {
+      justify-content: space-around;
+      width: 100%;
+      a {
+        font-size: 16px;
+      }
     }
   }
   .my-work {
-    >div {
-        width: 80%;
+    > div {
+      width: 100%;
     }
   }
   .btn-blue,
@@ -178,5 +190,21 @@ section {
         margin: 20px 0 0 0;
       }
     }
+  }
+  section {
+    background: 
+      url("./../../../assets/img/my-work/ellipse7.png") no-repeat 44% 3%,
+      url("./../../../assets/img/my-work/ellipse8.png") no-repeat 92% 13%,
+      url("./../../../assets/img/my-work/ellipse4.png") no-repeat left 18%,
+      url("./../../../assets/img/my-work/ellipse9.png") no-repeat right 48%,
+      url("./../../../assets/img/my-work/ellipse10.png") no-repeat 10% 73%,
+      url("./../../../assets/img/my-work/ellipse13.png") no-repeat 81% 82%;
+    background-size: 
+      45px 45px, 
+      70px 70px, 
+      136px 250px, 
+      161px 230px, 
+      50px 50px, 
+      70px 70px;  
   }
 }
