@@ -55,13 +55,11 @@ section {
         }
     }
 }
-
 .message {
     align-items: center;
     width: 102%;
     height: 550px;
 }
-
 .space-for-message {
     height: 26px;
     width: 100%;
@@ -80,13 +78,11 @@ section {
         left: 50%;
     }
 }
-
 .text-area {
     img {
         top: -222px;
     }
 }
-
 .checkbox-div {
     display: flex;
     font-size: 14px;
@@ -105,8 +101,41 @@ section {
         }
     }
 }
-
 #submitBtn {
     width: 181px;
     padding: 15px 25px;
+}
+
+@media (max-width: 1000px) {
+    section {
+        >div {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            >div {
+                width: 60%;
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width: 750px) {
+    section {
+        background:
+            url("./../../../assets/img/my-work/ellipse11.png") no-repeat 46% 56%,
+            url("./../../../assets/img/ellipse14.png") no-repeat 95% 95%,
+            linear-gradient(#ffffff, #eaf0ff) no-repeat, ;
+        background-size: 150px 150px, 40px 40px, 100% 100%;
+        h2 {
+            font-size: 45px;
+        }
+        h3 {
+            font-size: 23px;
+        }
+        >div {
+            >div {
+                width: 100%;
+            }
+        }
+    }
 }
