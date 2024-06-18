@@ -18,5 +18,13 @@
     },
     "skillSet": {
         "title": "Skill set"
+    },
+    "myWork": {
+        "title": "My work",
+        "subtitle": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "joinText": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "locoText": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "pokedexText": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+        "liveTest": "Live test"
     }
 }
