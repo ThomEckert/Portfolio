@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SharedService } from '../../shared/shared.service';
 import { NavigationComponent } from "./navigation/navigation.component";
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -9,7 +10,7 @@ import { NavigationComponent } from "./navigation/navigation.component";
     standalone: true,
     templateUrl: './landing-page.component.html',
     styleUrl: './landing-page.component.scss',
-    imports: [NavigationComponent]
+    imports: [NavigationComponent, TranslateModule]
 })
 export class LandingPageComponent {
 

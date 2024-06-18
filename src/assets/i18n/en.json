@@ -6,6 +6,6 @@
     },
     "landingPage": {
         "hello": "Hello! I am Thomas",
-        "Developer": "DEVELOPER"
+        "developer": "DEVELOPER"
     }
 }

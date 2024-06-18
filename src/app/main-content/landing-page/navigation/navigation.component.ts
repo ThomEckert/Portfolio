@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { TranslationService } from '../../../shared/translation.service';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navigation',
