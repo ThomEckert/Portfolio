@@ -20,16 +20,24 @@
     </div>
 </nav>
 
-<div class="hidden-nav-bar-content d-none">
-    <div>
-        <a href="#letsWorkTogether">About me</a>
-        <a href="#skillSet">Skill set</a>
-        <a href="#myWork">My work</a>
-        <a href="#contact">Contact</a>
-        <div class="language">
-          <p>
-              <a (click)="translate.switchLanguage('en')">EN</a> | <a (click)="translate.switchLanguage('de')">DE</a>
-          </p>
-      </div>
+<!-- noch an das [class.d-none]="isAktive == false" denken -->
+<div class="hidden-nav-bar d-none" >
+    <div class="hidden-nav-bar-top">
+        <img src="./assets/img/logo2.png" alt="">
+        <img src="./assets/img/burger-menu.png" alt="">
     </div>
-</div>
+  
+    <div class="hidden-nav-bar-content">
+        <div>
+            <a href="#letsWorkTogether">{{'navigation.aboutMe' | translate}}</a>
+            <a href="#skillSet">Skill set</a>
+            <a href="#myWork">{{'navigation.skillSet' | translate}}</a>
+            <a href="#contact">{{'navigation.contact' | translate}}</a>
+            <div class="language">
+              <p>
+                  <a (click)="translate.switchLanguage('en')">EN</a> | <a (click)="translate.switchLanguage('de')">DE</a>
+              </p>
+          </div>
+        </div>
+    </div>
+  </div>
