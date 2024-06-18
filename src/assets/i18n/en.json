@@ -1,0 +1,11 @@
+{
+    "navigation": { 
+        "aboutMe": "About me",
+        "skillSet": "Skill set",
+        "myWork": "My work"
+    },
+    "landingPage": {
+        "hello": "Hello! I am Thomas",
+        "Developer": "DEVELOPER"
+    }
+}

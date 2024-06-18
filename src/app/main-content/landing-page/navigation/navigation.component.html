@@ -2,12 +2,20 @@
     <a href="#landingPage"><img src="./assets/img/logo.png" alt="logo"></a>
     
     <div class="nav-bar">
-        <a href="#letsWorkTogether">About me</a>
-        <a href="#skillSet">Skill set</a>
-        <a href="#myWork">My work</a>
+        <a href="#letsWorkTogether">{{'navigation.aboutMe' | translate}}</a>
+        <a href="#skillSet">{{'navigation.skillSet' | translate}}</a>
+        <a href="#myWork">{{'navigation.myWork' | translate}}</a>
+        <div class="language">
+            <p>
+                <a (click)="translate.switchLanguage('en')">EN</a> | <a (click)="translate.switchLanguage('de')">DE</a>
+            </p>
+        </div>
     </div>
 
+    
+
     <div class="hidden-burger-menu">
-        <img src="./assets/img/burger-menu.png" alt="">
+        <!-- nicht vergessen: (click)="toggleValue()" -->
+        <img src="./assets/img/burger-menu.png" alt="" >
     </div>
 </nav>

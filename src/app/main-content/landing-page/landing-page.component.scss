@@ -115,6 +115,11 @@ section {
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    img {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
   .hidden-nav-bar-content {
     display: flex;
@@ -127,8 +132,12 @@ section {
       align-items: center;
       gap: 25px;
       a {
+        font-size: 23px;
         text-decoration: none;
         color: #5988ff;
+        &:hover {
+          font-weight: 700;
+        }
       }
     }
   }
@@ -229,4 +238,8 @@ section {
       }
     }
   }
+}
+
+.d-none {
+  display: none;
 }
