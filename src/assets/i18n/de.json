@@ -26,5 +26,23 @@
         "locoText": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
         "pokedexText": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
         "liveTest": "Live Test"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "subtitle": "Haben Sie ein Problem zu lösen?",
+        "description": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "needFrontend": "Brauchen Sie einen Frontend-Entwickler?",
+        "contactMe": "Kontaktieren Sie mich!",
+        "name": "Dein Name",
+        "nameErr": "Ihr Name ist erforderlich.",
+        "email": "Deine Email",
+        "emailErr": "Ihre Email ist erforderlich.",
+        "message": "Schreibe etwas",
+        "messageErr": "Ihre Nachricht ist leer.",
+        "checkbox1": "Ich habe die",
+        "checkbox2": "Datenschutzerklärung",
+        "checkbox3": "gelesen und akzeptiere die Bedingungen",
+        "checkErr": "Bitte aktzeptieren Sie die Datenschutzerklärung",
+        "send": "Hallo sagen ;)"
     }
 }

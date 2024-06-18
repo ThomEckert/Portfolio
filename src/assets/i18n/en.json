@@ -26,5 +26,23 @@
         "locoText": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
         "pokedexText": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
         "liveTest": "Live test"
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Got a problem to solve?",
+        "description": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "needFrontend": "Need a Frontend developer?",
+        "contactMe": "Contact me!",
+        "name": "Your name",
+        "nameErr": "Your name is required.",
+        "email": "Your email",
+        "emailErr": "Your email is required.",
+        "message": "Write something",
+        "messageErr": "Your message is empty.",
+        "checkbox1": "I've read the ",
+        "checkbox2": "privacy policy ",
+        "checkbox3": "and accept the conditions",
+        "checkErr": "Please accept the privacy policy.",
+        "send": "Say hello ;)"
     }
 }
