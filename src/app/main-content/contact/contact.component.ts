@@ -43,7 +43,8 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            
+            this.thxMessage = true;
+            this.contactData.checkbox = false;
             ngForm.resetForm();
           },
           error: (error) => {
@@ -54,6 +55,7 @@ export class ContactComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log('Daten gesendet', this.contactData);
       this.thxMessage = true;
+      this.contactData.checkbox = false;
       ngForm.resetForm();
     }
     this.contactData.checkbox = false;
