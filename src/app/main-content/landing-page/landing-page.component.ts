@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SharedService } from '../../shared/shared.service';
 import { NavigationComponent } from "./navigation/navigation.component";
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -13,11 +12,4 @@ import { TranslateModule } from '@ngx-translate/core';
     imports: [NavigationComponent, TranslateModule]
 })
 export class LandingPageComponent {
-
-  constructor(private sharedService: SharedService) {}
-
-  toggleValue(): void {
-    this.sharedService.setData(!this.sharedService.getData$());
-  }
-
 }

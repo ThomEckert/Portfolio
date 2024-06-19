@@ -22,7 +22,7 @@ export class ContactComponent {
     checkbox: false,
   };
 
-  mailTest = true;
+  mailTest = false;
 
   thxMessage = false;
 
