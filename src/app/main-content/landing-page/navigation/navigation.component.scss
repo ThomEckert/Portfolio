@@ -36,7 +36,7 @@ nav {
     margin: 0;
   }
 }
-.hidden-nav-bar-content {
+.hidden-nav-bar {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -63,7 +63,7 @@ nav {
       }
     }
   }
-  .hidden-nav-bar{
+  .hidden-nav-bar-content {
     display: flex;
     justify-content: center;
     align-items: center;

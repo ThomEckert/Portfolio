@@ -11,7 +11,11 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class NavigationComponent{
  translate = inject(TranslationService);
-  constructor() {}
+  hiddenBarIsAktive = false;
+
+  toggleHiddenBar() {
+    this.hiddenBarIsAktive = !this.hiddenBarIsAktive
+  }
 
  
   
