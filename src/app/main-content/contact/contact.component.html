@@ -66,3 +66,7 @@
         </div>
     </div>
 </section>
+
+<div class="thx-message" [class.d-none]="thxMessage == false" (click)="thxMessage = false">
+    <p>{{'contact.thx' | translate}}</p>
+</div>

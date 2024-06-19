@@ -90,8 +90,7 @@ section {
     width: 100%;
     input {
         width: fit-content !important;
-        cursor: pointer;
-        border: 2px solid #5988FF;
+        // border: 2px solid #5988FF;
     }
     a {
         color: #5988FF;
@@ -102,10 +101,24 @@ section {
         }
     }
 }
+.thx-message {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#ffffff, #eaf0ff) no-repeat;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 #submitBtn {
     width: 181px;
     padding: 15px 25px;
     margin: 15px 0;
+    border: #5988FF solid 1px;
 }
 
 @media (max-width: 1000px) {
@@ -141,3 +154,8 @@ section {
         }
     }
 }
+
+.d-none {
+    display: none;
+}
+

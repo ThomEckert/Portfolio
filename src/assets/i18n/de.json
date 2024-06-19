@@ -43,6 +43,7 @@
         "checkbox2": "Datenschutzerklärung",
         "checkbox3": "gelesen und akzeptiere die Bedingungen",
         "checkErr": "Bitte aktzeptieren Sie die Datenschutzerklärung",
-        "send": "Hallo sagen ;)"
+        "send": "Hallo sagen ;)",
+        "thx": "Vielen Dank für Ihre Nachricht!"
     }
 }

@@ -24,6 +24,8 @@ export class ContactComponent {
 
   mailTest = true;
 
+  thxMessage = false;
+
   post = {
     endPoint: 'https://thomas-eckert.net/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -50,7 +52,8 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      console.log('Daten gesendet', this.contactData);
+      this.thxMessage = true;
       ngForm.resetForm();
     }
     this.contactData.checkbox = false;

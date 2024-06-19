@@ -35,6 +35,7 @@ section {
     align-items: end;
     img {
       width: 85%;
+      box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.30);
       &:hover {
         transition: transform 125ms ease-in-out;
         transform: scale(1.1) translate(0, -10px);

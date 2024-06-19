@@ -43,6 +43,7 @@
         "checkbox2": "privacy policy ",
         "checkbox3": "and accept the conditions",
         "checkErr": "Please accept the privacy policy.",
-        "send": "Say hello ;)"
+        "send": "Say hello ;)",
+        "thx": "Thank you for your message!"
     }
 }
