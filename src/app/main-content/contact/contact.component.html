@@ -13,7 +13,7 @@
         <div class="message">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" [placeholder]="'contact.name' | translate" required>
+                <input class="input-class" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" [placeholder]="'contact.name' | translate" required>
                 <div class="space-for-message">
                     @if (!name.valid && name.touched && !name.disabled) {
                         <span>{{'contact.nameErr' | translate}}</span>
@@ -25,7 +25,7 @@
                     }
                 </div>
 
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" [placeholder]="'contact.email' | translate" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                <input class="input-class" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" [placeholder]="'contact.email' | translate" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                 <div class="space-for-message">
                     @if (!email.valid && email.touched && !email.disabled) {
                         <span>{{'contact.emailErr' | translate}}</span>
@@ -37,7 +37,7 @@
                     }
                 </div>
 
-                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" type="message" id="message" name="message" [placeholder]="'contact.message' | translate" style="height: 200px;" required></textarea>
+                <textarea class="input-class" #message="ngModel" minlength="4" [(ngModel)]="contactData.message" type="message" id="message" name="message" [placeholder]="'contact.message' | translate" style="height: 200px;" required></textarea>
                 <div class="space-for-message text-area">
                     @if (!message.valid && message.touched && !message.disabled) {
                         <span>{{'contact.messageErr' | translate}}</span>
@@ -60,7 +60,7 @@
                     }
                 </div>
 
-                <input id="submitBtn" class="submint-btn" type="submit" value="Submit" [disabled]="contactData.checkbox == false">
+                <input id="submitBtn" class="submit-btn" type="submit" [value]="'contact.send' | translate" [disabled]="contactData.checkbox == false" [class.sub-btn-aktive]="contactData.checkbox == true">
 
             </form>
         </div>
