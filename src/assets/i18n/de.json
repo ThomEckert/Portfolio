@@ -45,5 +45,8 @@
         "checkErr": "Bitte aktzeptieren Sie die Datenschutzerklärung",
         "send": "Hallo sagen ;)",
         "thx": "Vielen Dank für Ihre Nachricht!"
+    },
+    "footer": {
+        "imprint" : "Impressum"
     }
 }

@@ -45,5 +45,8 @@
         "checkErr": "Please accept the privacy policy.",
         "send": "Say hello ;)",
         "thx": "Thank you for your message!"
+    },
+    "footer": {
+        "imprint" : "Imprint"
     }
 }

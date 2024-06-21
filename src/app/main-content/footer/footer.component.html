@@ -1,13 +1,15 @@
-<footer>
-    <div>
-        <a href="#landingPage"><img src="./assets/img/logo.png" alt=""></a>
-        
-        <p>© Thomas Eckert 2024</p>
+<div class="background">
+    <footer>
         <div>
-            <a href="https://github.com/ThomEckert" target="_blank" rel="noopener noreferrer"><img src="./assets/img/footer/git2.png" alt=""/></a>
-            <a href="mailto:mail&#64;thomas-eckert.net"><img src="./assets/img/footer/email2.png" alt="" /></a>
-            <a href="https://www.linkedin.com/in/thomas-eckert-0a7773309/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/footer/linkedin2.png" alt=""/></a>
+            <a href="#landingPage"><img src="./assets/img/logo.png" alt=""></a>
+            
+            <p>© Thomas Eckert 2024</p>
+            <div>
+                <a href="https://github.com/ThomEckert" target="_blank" rel="noopener noreferrer"><img src="./assets/img/footer/git2.png" alt=""/></a>
+                <a href="mailto:mail&#64;thomas-eckert.net"><img src="./assets/img/footer/email2.png" alt="" /></a>
+                <a href="https://www.linkedin.com/in/thomas-eckert-0a7773309/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/footer/linkedin2.png" alt=""/></a>
+            </div>
         </div>
-    </div>
-    <a [routerLink]="[ '/imprint' ]">Impressum</a>
-</footer>
+        <a [routerLink]="[ '/imprint' ]">{{'footer.imprint' | translate}}</a>
+    </footer>
+</div>
