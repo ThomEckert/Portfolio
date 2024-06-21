@@ -91,17 +91,16 @@ section {
 .btn-blue {
   border: #5988ff solid 2px;
   border-radius: 10px;
-  background: #5988ff;
+  background-color: #5988ff;
   padding: 15px 30px;
   font-size: 23px;
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
   margin: 50px 50px 0 0;
-  background: linear-gradient(130deg, #5988ff, #5988ff, #0043f0, #5988ff 50%)
-    right;
+  background: linear-gradient(130deg, #5988ff, #5988ff, #0043f0, #5988ff 50%) right;
   background-size: 300%;
-  background-position: right;
+  background-position: center;
   transition: background-position 125ms ease-in-out, color 125ms ease-in-out,
     transform 125ms ease-in-out;
   &:hover {

@@ -46,14 +46,14 @@ section {
             flex-direction: column;
             .input-class {
                 width: calc(100% - 70px);
-                border: 1px solid #5988FF;
+                border: 1px inset #5988FF;
                 border-radius: 10px;
                 padding: 15px 51px 15px 25px;
                 font-size: 16px;
                 font-family: 'Montserrat';
                 cursor: pointer;
                 &:hover {
-                    border: 2px solid #5988FF;
+                    outline: 2px solid #5988FF;
                 }
             }
             .submit-btn {
