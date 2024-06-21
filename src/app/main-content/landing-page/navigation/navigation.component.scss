@@ -58,10 +58,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    height: 117px;
     img {
       &:hover {
         cursor: pointer;
+        transform: scale(1.1);
       }
     }
   }
