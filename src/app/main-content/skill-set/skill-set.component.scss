@@ -1,6 +1,11 @@
+.background {
+    background: linear-gradient(to bottom right, #5988ff, #5988ff, #0043F0);
+    display: flex;
+    justify-content: center;
+}
 section {
     max-width: 1440px;
-    background: linear-gradient(to bottom right, #5988ff, #5988ff, #0043F0);
+    
     display: flex;
     flex-direction: column;
     align-items: center;
