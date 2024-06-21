@@ -42,20 +42,26 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            this.thxMessage = true;
-            this.contactData.checkbox = false;
+            this.thankYouMessage();
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info('Send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log('Daten gesendet', this.contactData);
-      this.thxMessage = true;
-      this.contactData.checkbox = false;
-      ngForm.resetForm();
+        console.log('Daten gesendet', this.contactData);
+        this.thankYouMessage();
+        ngForm.resetForm();
     }
+  }
+
+  thankYouMessage() {
+    this.thxMessage = true;
+    this.contactData.checkbox = false;
+    setTimeout(() => {
+      this.thxMessage = false;
+    }, 1000);
   }
 }

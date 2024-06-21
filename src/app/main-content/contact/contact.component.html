@@ -61,7 +61,10 @@
                         }
                     </div>
 
-                    <input id="submitBtn" class="submit-btn" type="submit" [value]="'contact.send' | translate" [disabled]="contactData.checkbox == false" [class.sub-btn-aktive]="contactData.checkbox == true">
+                    <input id="submitBtn" class="submit-btn" type="submit" 
+                    [value]="'contact.send' | translate" 
+                    [disabled]="contactData.checkbox == false && name.valid && email.valid && message.valid" 
+                    [class.sub-btn-aktive]="contactData.checkbox == true && name.valid && email.valid && message.valid">
 
                 </form>
             </div>
@@ -69,6 +72,9 @@
     </section>
 
     <div class="thx-message" [class.d-none]="thxMessage == false" (click)="thxMessage = false">
-        <p>{{'contact.thx' | translate}}</p>
+        <div class="thx-message-content">
+            <p>{{'contact.thx' | translate}}</p>
+        </div>
+        
     </div>
 </div>

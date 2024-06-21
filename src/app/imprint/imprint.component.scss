@@ -1,15 +1,21 @@
 section {
-  max-width: 1440px;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   background: linear-gradient(#ffffff, #eaf0ff) no-repeat;
+  cursor: pointer;
   > div {
-    width: 90%;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 5% 0;
+    background: 
+    url("./../../assets/img/my-work/ellipse11.png") no-repeat 26% 32%,
+    url("./../../assets/img/ellipse14.png") no-repeat 69% 69%;
     div {
       width: 300px;
     }
