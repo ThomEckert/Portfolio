@@ -1,72 +1,74 @@
-<section>
-    <div>
-        <h2>{{'contact.title' | translate}}</h2>
-    </div>
-    
-    <div>
-        <div class="gotAProblem">
-            <h3>{{'contact.subtitle' | translate}}</h3>
-            <p>{{'contact.description' | translate}}</p>
-            <h4>{{'contact.needFrontend' | translate}} <span>{{'contact.contactMe' | translate}}</span></h4>
+<div class="background">
+    <section>
+        <div>
+            <h2>{{'contact.title' | translate}}</h2>
         </div>
+        
+        <div>
+            <div class="gotAProblem">
+                <h3>{{'contact.subtitle' | translate}}</h3>
+                <p>{{'contact.description' | translate}}</p>
+                <h4>{{'contact.needFrontend' | translate}} <span>{{'contact.contactMe' | translate}}</span></h4>
+            </div>
 
-        <div class="message">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                
-                <input class="input-class" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" [placeholder]="'contact.name' | translate" required>
-                <div class="space-for-message">
-                    @if (!name.valid && name.touched && !name.disabled) {
-                        <span>{{'contact.nameErr' | translate}}</span>
-                        <img src="./assets/img/attention.png" alt="">
-                    }
-                    @if (name.valid && name.touched && !name.disabled) {
-                        <span></span>
-                        <img src="./assets/img/check.png" alt="">
-                    }
-                </div>
-
-                <input class="input-class" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" [placeholder]="'contact.email' | translate" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
-                <div class="space-for-message">
-                    @if (!email.valid && email.touched && !email.disabled) {
-                        <span>{{'contact.emailErr' | translate}}</span>
-                        <img src="./assets/img/attention.png" alt="">
-                    }
-                    @if (email.valid && email.touched && !email.disabled) {
-                        <span></span>
-                        <img src="./assets/img/check.png" alt="">
-                    }
-                </div>
-
-                <textarea class="input-class" #message="ngModel" minlength="4" [(ngModel)]="contactData.message" type="message" id="message" name="message" [placeholder]="'contact.message' | translate" style="height: 200px;" required></textarea>
-                <div class="space-for-message text-area">
-                    @if (!message.valid && message.touched && !message.disabled) {
-                        <span>{{'contact.messageErr' | translate}}</span>
-                        <img src="./assets/img/attention.png" alt="">
-                    }
-                    @if (message.valid && message.touched && !message.disabled) {
-                        <span></span>
-                        <img src="./assets/img/check.png" alt="">
-                    }
-                </div>
-                
-                <div class="checkbox-div">
-                    <input id="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox" name="checkbox" type="checkbox" required>
-                    <label for="checkbox">{{'contact.checkbox1' | translate}} <a [routerLink]="[ '/privacy-policy' ]">{{'contact.checkbox2' | translate}}</a> {{'contact.checkbox3' | translate}}</label>
+            <div class="message">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     
-                </div>
-                <div class="space-for-message">
-                    @if (!checkbox.valid && checkbox.touched && !checkbox.disabled) {
-                        <span>{{'contact.checkErr' | translate}}</span>
-                    }
-                </div>
+                    <input class="input-class" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" [placeholder]="'contact.name' | translate" required>
+                    <div class="space-for-message">
+                        @if (!name.valid && name.touched && !name.disabled) {
+                            <span>{{'contact.nameErr' | translate}}</span>
+                            <img src="./assets/img/attention.png" alt="">
+                        }
+                        @if (name.valid && name.touched && !name.disabled) {
+                            <span></span>
+                            <img src="./assets/img/check.png" alt="">
+                        }
+                    </div>
 
-                <input id="submitBtn" class="submit-btn" type="submit" [value]="'contact.send' | translate" [disabled]="contactData.checkbox == false" [class.sub-btn-aktive]="contactData.checkbox == true">
+                    <input class="input-class" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" [placeholder]="'contact.email' | translate" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                    <div class="space-for-message">
+                        @if (!email.valid && email.touched && !email.disabled) {
+                            <span>{{'contact.emailErr' | translate}}</span>
+                            <img src="./assets/img/attention.png" alt="">
+                        }
+                        @if (email.valid && email.touched && !email.disabled) {
+                            <span></span>
+                            <img src="./assets/img/check.png" alt="">
+                        }
+                    </div>
 
-            </form>
+                    <textarea class="input-class" #message="ngModel" minlength="4" [(ngModel)]="contactData.message" type="message" id="message" name="message" [placeholder]="'contact.message' | translate" style="height: 200px;" required></textarea>
+                    <div class="space-for-message text-area">
+                        @if (!message.valid && message.touched && !message.disabled) {
+                            <span>{{'contact.messageErr' | translate}}</span>
+                            <img src="./assets/img/attention.png" alt="">
+                        }
+                        @if (message.valid && message.touched && !message.disabled) {
+                            <span></span>
+                            <img src="./assets/img/check.png" alt="">
+                        }
+                    </div>
+                    
+                    <div class="checkbox-div">
+                        <input id="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox" name="checkbox" type="checkbox" required>
+                        <label for="checkbox">{{'contact.checkbox1' | translate}} <a [routerLink]="[ '/privacy-policy' ]">{{'contact.checkbox2' | translate}}</a> {{'contact.checkbox3' | translate}}</label>
+                        
+                    </div>
+                    <div class="space-for-message">
+                        @if (!checkbox.valid && checkbox.touched && !checkbox.disabled) {
+                            <span>{{'contact.checkErr' | translate}}</span>
+                        }
+                    </div>
+
+                    <input id="submitBtn" class="submit-btn" type="submit" [value]="'contact.send' | translate" [disabled]="contactData.checkbox == false" [class.sub-btn-aktive]="contactData.checkbox == true">
+
+                </form>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<div class="thx-message" [class.d-none]="thxMessage == false" (click)="thxMessage = false">
-    <p>{{'contact.thx' | translate}}</p>
+    <div class="thx-message" [class.d-none]="thxMessage == false" (click)="thxMessage = false">
+        <p>{{'contact.thx' | translate}}</p>
+    </div>
 </div>

@@ -1,3 +1,8 @@
+.background {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#ffffff, #eaf0ff) no-repeat;
+}
 section {
     max-width: 1440px;
     display: flex;
@@ -6,8 +11,7 @@ section {
     padding: 70px 0 100px 0;
     background:
         url("./../../../assets/img/my-work/ellipse11.png") no-repeat 17% 70%,
-        url("./../../../assets/img/ellipse14.png") no-repeat 95% 95%,
-        linear-gradient(#ffffff, #eaf0ff) no-repeat, ;
+        url("./../../../assets/img/ellipse14.png") no-repeat 95% 95%;
     h2 {
         font-size: 92px;
         margin: 0 0 32px 0;
@@ -121,7 +125,6 @@ section {
   justify-content: center;
   cursor: pointer;
 }
-
 .sub-btn-aktive {
     background: white;
     border: #5988FF solid 2px !important;
@@ -156,9 +159,8 @@ section {
     section {
         background:
             url("./../../../assets/img/my-work/ellipse11.png") no-repeat 46% 56%,
-            url("./../../../assets/img/ellipse14.png") no-repeat 95% 95%,
-            linear-gradient(#ffffff, #eaf0ff) no-repeat, ;
-        background-size: 150px 150px, 40px 40px, 100% 100%;
+            url("./../../../assets/img/ellipse14.png") no-repeat 95% 95%;
+        background-size: 150px 150px, 40px 40px;
         h2 {
             font-size: 45px;
         }
@@ -176,4 +178,3 @@ section {
 .d-none {
     display: none;
 }
-
