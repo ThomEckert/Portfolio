@@ -7,7 +7,6 @@ nav {
   justify-content: space-between;
   > a {
     height: 69px;
-    // margin: 0 100px;
   }
   .hidden-burger-menu {
     display: none;
@@ -20,7 +19,6 @@ nav {
   > div {
     display: flex;
     gap: 36px;
-    // padding: 0 100px;
     a {
       width: 120px;
       text-decoration: unset;
@@ -35,7 +33,9 @@ nav {
 .language {
   p {
     margin: 0;
-    cursor: pointer;
+    a {
+      cursor: pointer;
+    }
   }
 }
 .hidden-nav-bar {
