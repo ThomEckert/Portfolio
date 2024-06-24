@@ -165,8 +165,22 @@ section {
 }
 }
 
+@media (max-width: 1400px) {
+    section {
+        background:
+            url("./../../../assets/img/my-work/ellipse11.png") no-repeat 17% 83%,
+            url("./../../../assets/img/ellipse14.png") no-repeat 95% 95%;
+        h3 {
+            font-size: 26px;
+        }
+    }
+}
 @media (max-width: 1000px) {
     section {
+        background:
+            url("./../../../assets/img/my-work/ellipse11.png") no-repeat 46% 56%,
+            url("./../../../assets/img/ellipse14.png") no-repeat 95% 95%;
+        background-size: 150px 150px, 40px 40px;
         >div {
             justify-content: center;
             flex-direction: column;
@@ -177,13 +191,12 @@ section {
             }
         }
     }
+    .btn-up {
+        top: 233%;
+    }
 }
 @media (max-width: 750px) {
     section {
-        background:
-            url("./../../../assets/img/my-work/ellipse11.png") no-repeat 46% 56%,
-            url("./../../../assets/img/ellipse14.png") no-repeat 95% 95%;
-        background-size: 150px 150px, 40px 40px;
         h2 {
             font-size: 45px;
         }
@@ -195,6 +208,12 @@ section {
                 width: 100%;
             }
         }
+    }
+    
+}
+@media (max-width: 400px) {
+    .btn-up {
+        top: 200%;
     }
 }
 
