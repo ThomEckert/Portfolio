@@ -103,7 +103,6 @@ section {
     width: 100%;
     input {
         width: fit-content !important;
-        // border: 2px solid #5988FF;
     }
     a {
         color: #5988FF;
@@ -153,6 +152,17 @@ section {
         background-position: left;
         color: white !important;
     }
+}
+.btn-up {
+    position: relative;
+    background: url("./../../../assets/img/contact/upButton.png") no-repeat;
+    width: 39px;
+    height: 39px;
+    top: 64%;
+    &:hover {
+        cursor: pointer;
+    background: url("./../../../assets/img/contact/upButton2.png") no-repeat;
+}
 }
 
 @media (max-width: 1000px) {
